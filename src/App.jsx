@@ -1,7 +1,20 @@
-import './App.css'
+import {Routes, Route} from 'react-router-dom';
+import  NavBar from './NavBar.jsx'
+import PostPage from './PostPage.jsx';
 
-function App() {
-  return <h1>Yo</h1>
+
+const App = () => {
+  return (
+  <>
+  <NavBar />
+    <Routes>
+      <Route path='/post' element= {<PostPage />} />
+
+    </Routes>
+
+  </>
+  
+  )
 }
 
 export default App
